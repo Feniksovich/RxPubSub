@@ -323,7 +323,9 @@ public final class MessagingService {
                             }
                             return;
                         }
-                        error.accept(false);
+                        if (error != null) {
+                            error.accept(false);
+                        }
                     });
         });
     }
