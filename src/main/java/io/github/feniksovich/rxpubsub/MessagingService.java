@@ -318,8 +318,12 @@ public final class MessagingService {
                     .whenComplete((reached, ex) -> {
                         if (ex != null) {
                             logger.error("Failed to publish message " + message, ex);
-                            if (error != null) error.accept(true);
+                            if (error != null) {
+                                error.accept(true);
+                            }
+                            return;
                         }
+                        error.accept(false);
                     });
         });
     }
