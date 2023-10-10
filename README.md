@@ -8,13 +8,13 @@
 <dependency>
   <groupId>io.github.feniksovich</groupId>
   <artifactId>rxpubsub</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
 </dependency>
 ```
 **Gradle**
 ```gradle
 dependencies {
-    implementation 'io.github.feniksovich:rxpubsub:1.0.1'
+    implementation 'io.github.feniksovich:rxpubsub:1.0.2'
 }
 ```
 
