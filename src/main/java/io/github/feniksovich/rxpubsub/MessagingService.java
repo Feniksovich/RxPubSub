@@ -87,7 +87,6 @@ public final class MessagingService {
         // Don't handle if channel isn't registered as incoming
         if (!registeredIncomingChannels.containsKey(channel)) return;
 
-        System.out.println("Received message: " + channel + " @ " + message);
         logger.debug("Received message: " + channel + " @ " + message);
 
         // Check whether any message is registered with the obtained class ID
