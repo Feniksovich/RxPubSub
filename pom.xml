@@ -7,7 +7,7 @@
     <!-- Artifact Data -->
     <groupId>io.github.feniksovich</groupId>
     <artifactId>rxpubsub</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 
     <name>RxPubSub</name>
     <description>Ultimate tool for utilizing the Redis Pub/Sub feature in Java applications</description>
