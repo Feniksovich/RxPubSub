@@ -161,8 +161,9 @@ public final class MessagingService {
         redisClient.shutdown();
 
         final boolean state = init();
-        if (state && !registeredOutgoingChannels.isEmpty())
-            subscribe(registeredOutgoingChannels.keySet().toArray(new String[0]));
+        // Resubscribe to the registered incoming channels
+        if (state && !registeredIncomingChannels.isEmpty())
+            subscribe(registeredIncomingChannels.keySet().toArray(new String[0]));
 
         return state;
     }
